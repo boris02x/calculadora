@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
         btn_suma = findViewById(R.id.button_suma);
         btn_suma.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,13 +82,14 @@ public class MainActivity extends AppCompatActivity {
         return a*b;
     }
 
-    public double division (int a, int b){
-        int respuesta = 0;
+    public double division(int a, int b) {
+        double respuesta = 0;
 
-        if (b!=0){
-            respuesta=a/b;
+        if (b != 0) {
+            respuesta = (double) a / b;
         }
 
         return respuesta;
     }
+
 }
